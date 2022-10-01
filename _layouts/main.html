@@ -1,0 +1,22 @@
+---
+layout: compress
+---
+<!DOCTYPE html>
+<html>
+    <head>
+        {% include head.html %}
+    </head>
+    <body>
+        <main>
+            <r-grid columns=9>
+                <r-cell span=8 style="max-width:1000px; margin: auto" id="{% if page.id %}{{page.id}}{% endif %}">
+                    {{ content }}
+                    <section  >
+                        <p class="subtitle">© Derrek Chow 2022</p>
+                    </section>
+                </r-cell>
+                <r-cell span=1>{% include nav.html %}</r-cell>
+            </r-grid>
+        </main>
+    </body>
+</html>
